@@ -1,0 +1,81 @@
+<!doctype html><meta charset=utf-8>
+<!-- Gambar Fastwork (cover + galeri). Render: bash thumbnail/render.sh thumbnail
+     assets/report-awal.png = screenshot results/audit-awal.html (Edge headless, 900px, skala 2) -->
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Caveat:wght@700&family=JetBrains+Mono:wght@500;700&display=block" rel="stylesheet">
+<link rel=stylesheet href="base.css">
+<style>
+:root{--accent:#C46A12;--bg:#FBF5EC;--blob1:#FFD9A8;--blob2:#DCE6FF;--ink:#2A2117;--ink2:#4A3D30;--muted:#857563;
+  --shadow:rgba(170,100,30,.40);--shadow2:rgba(170,100,30,.14);--chipb:#FFCF87}
+.shot{position:absolute;border-radius:24px;overflow:hidden;background:#fff;
+  box-shadow:0 40px 70px -30px var(--shadow),0 10px 24px -10px var(--shadow2)}
+.shot img{display:block;width:100%}
+.mini{position:absolute;background:#fff;border-radius:22px;padding:18px 22px;box-shadow:0 30px 50px -26px var(--shadow)}
+.bar{height:12px;border-radius:99px;background:#F1E7DA;overflow:hidden;margin-top:10px}
+.bar i{display:block;height:100%;border-radius:99px}
+.list li{list-style:none;display:flex;gap:14px;align-items:flex-start;font:500 19px/1.35 'Plus Jakarta Sans';color:var(--ink2);margin-bottom:16px}
+.list li b{color:var(--ink)}
+.n{flex:none;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;display:grid;place-items:center;font:800 15px 'Plus Jakarta Sans';margin-top:-1px}
+.big{font:800 54px/1 'Plus Jakarta Sans';letter-spacing:-2px}
+.arrow{font:700 34px 'Plus Jakarta Sans';color:var(--muted);margin:0 10px}
+.col h3{font:800 22px 'Plus Jakarta Sans';margin-bottom:10px;display:flex;align-items:center;gap:10px}
+.col p{font:500 16.5px/1.5 'Plus Jakarta Sans';color:var(--ink2)}
+</style>
+
+<!-- 1. COVER -->
+<section class=slide data-name="cover">
+  <div class=eyebrow><i></i>Konsultasi &amp; Audit Arsitektur IT</div>
+  <h1 style="font-size:84px">Server Anda<br>sehat, atau<br><em>cuma jalan?<svg viewBox="0 0 300 26" preserveAspectRatio="none"><path d="M4 16 C60 4 120 6 170 12 S260 20 296 8" fill="none" stroke="#C46A12" stroke-width="7" stroke-linecap="round" opacity=".45"/></svg></em></h1>
+  <p class=sub style="top:448px">Saya audit server Anda lalu serahkan laporan berprioritas: <b>apa yang berbahaya, dampaknya, dan estimasi jam perbaikannya.</b></p>
+  <p class=who>Untuk UMKM dan startup: server, website, database, backup.</p>
+
+  <div class=shot style="left:712px;top:96px;width:470px;height:430px;transform:rotate(2deg)">
+    <img src="assets/report-awal.png" alt=""></div>
+  <div class=mini style="left:646px;top:470px;width:330px;transform:rotate(-2deg)">
+    <div class=mono style="font-size:13px;letter-spacing:1px;color:var(--muted)">INDEKS KESEHATAN</div>
+    <div style="display:flex;align-items:baseline;margin-top:4px"><span class=big style="color:#C2343A">26</span><span class=arrow>→</span><span class=big style="color:#167A51">67</span><span class=muted style="font:600 18px 'Plus Jakarta Sans';margin-left:6px">/100</span></div>
+    <div class=bar><i style="width:67%;background:linear-gradient(90deg,#E5484D,#E9A23B 45%,#1F9D6B)"></i></div>
+  </div>
+  <div class=badge style="left:1086px;top:486px"><b>14</b><span>temuan, lengkap<br>dengan jam kerja</span></div>
+  <div class=note style="left:836px;top:30px;transform:rotate(-4deg)">laporan asli, bukan template
+    <svg viewBox="0 0 60 50" style="left:-92px;top:8px;width:84px;height:52px"><path d="M58 8 C30 6 12 18 12 42" fill=none stroke="#C46A12" stroke-width=3.5 stroke-linecap=round /><path d="M2 30 L12 44 L24 32" fill=none stroke="#C46A12" stroke-width=3.5 stroke-linecap=round stroke-linejoin=round /></svg></div>
+</section>
+
+<!-- 2. ISI LAPORAN -->
+<section class=slide data-name="isi-laporan">
+  <div class=eyebrow><i></i>Konsultasi &amp; Audit Arsitektur IT</div>
+  <p class=gtitle>Laporan yang bisa <em>langsung dikerjakan.</em></p>
+  <p class=gsub>Contoh nyata dari server lab (toko fiktif). Alat pengumpul datanya hanya membaca, server tidak diubah.</p>
+  <div class=shot style="left:64px;top:236px;width:600px;height:450px">
+    <img src="assets/report-awal.png" alt="" style="margin-top:-462px"></div>
+  <ul class=list style="position:absolute;left:712px;top:244px;width:510px">
+    <li><span class=n>1</span><span><b>Ringkasan eksekutif</b> yang bisa dibaca pemilik bisnis</span></li>
+    <li><span class=n>2</span><span><b>Diagram arsitektur</b> dari data server yang asli</span></li>
+    <li><span class=n>3</span><span><b>Setiap temuan:</b> bukti, dampak, rekomendasi, estimasi jam</span></li>
+    <li><span class=n>4</span><span><b>Rencana perbaikan</b> diurutkan per prioritas</span></li>
+    <li><span class=n>5</span><span><b>Yang sudah baik</b> dan <b>batasan audit</b>, ditulis terus terang</span></li>
+  </ul>
+  <div class=chip style="left:712px;top:592px;transform:rotate(-1deg)">28 aturan diperiksa · <b>16/16 tes · 12/12 bug tertangkap</b></div>
+</section>
+
+<!-- 3. AUDIT ULANG -->
+<section class=slide data-name="audit-ulang">
+  <div class=eyebrow><i></i>Konsultasi &amp; Audit Arsitektur IT</div>
+  <p class=gtitle>Diperbaiki, lalu <em>diaudit ulang.</em></p>
+  <p class=gsub>Laporan kedua membandingkan langsung dengan audit pertama, jadi kemajuannya terukur.</p>
+  <div class=card style="left:64px;top:236px;width:1152px;padding:24px 34px;display:flex;justify-content:space-between">
+    <div><div class=ctitle>Temuan</div><span class=big style="color:#C2343A">14</span><span class=arrow>→</span><span class=big style="color:#167A51">6</span></div>
+    <div><div class=ctitle>Indeks kesehatan</div><span class=big style="color:#C2343A">26</span><span class=arrow>→</span><span class=big style="color:#167A51">67</span><span class=muted style="font:600 20px 'Plus Jakarta Sans'"> /100</span></div>
+    <div><div class=ctitle>Sisa pekerjaan</div><span class=big>±33,75</span><span class=arrow>→</span><span class=big>±26,5</span><span class=muted style="font:600 20px 'Plus Jakarta Sans'"> jam</span></div>
+  </div>
+  <div class="card col" style="left:64px;top:404px;width:368px;height:222px">
+    <h3><span class="pill ok">9</span>Selesai</h3>
+    <p>Firewall, brute force, security header, WAF, directory listing, TLS lama, versi server, redirect HTTPS, file sensitif yang bisa diunduh.</p></div>
+  <div class="card col" style="left:456px;top:404px;width:400px;height:222px">
+    <h3><span class="pill warn">5</span>Masih ada, disengaja</h3>
+    <p>Backup, monitoring, server tunggal, sertifikat, dan jadwal update. Semuanya butuh <b>keputusan bisnis atau biaya</b>, bukan sekadar script.</p></div>
+  <div class="card col" style="left:880px;top:404px;width:336px;height:222px">
+    <h3><span class="pill bad">1</span>Temuan baru</h3>
+    <p>File sensitif sudah diblokir, tapi <b>masih tersimpan</b> di folder web. Sebaiknya dipindahkan.</p></div>
+</section>
+
+<script>const i=+location.hash.slice(1)||1;document.querySelectorAll('.slide').forEach((s,k)=>s.hidden=k+1!==i)</script>
