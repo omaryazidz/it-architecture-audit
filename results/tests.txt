@@ -1,0 +1,17 @@
+  [PASS] Server yang sehat -> 0 temuan, indeks 100, dan daftar 'yang sudah baik' terisi
+  [PASS] Setiap dari 28 aturan terpicu tepat oleh satu kerusakan dan memakai tingkat keparahan yang benar
+  [PASS] Merusak satu hal tidak menimbulkan temuan lain yang tidak terkait (tidak ada false positive silang)
+  [PASS] Tanpa Nginx -> aturan khusus web tidak berlaku (tidak jadi temuan dan tidak dipuji)
+  [PASS] Server tanpa port publik tidak dituduh 'tanpa firewall'
+  [PASS] OS lewat EOL, mendekati EOL (<12 bulan), dan masih aman dibedakan dengan benar
+  [PASS] PermitRootLogin 'prohibit-password' (hanya key) dianggap aman
+  [PASS] 1 Tinggi + 1 Sedang + 1 Rendah -> indeks 100-10-4-1 = 85; tidak pernah di bawah 0
+  [PASS] Audit ulang: temuan yang beres, yang masih ada, dan yang baru muncul dipisah dengan benar
+  [PASS] Nama host berisi tag <script> -> di-escape di HTML; semua bagian laporan ada
+  [PASS] Diagram menampilkan port publik, status firewall, dan komponen yang terdeteksi
+  [PASS] Semua aturan punya id unik, tingkat valid, dan isi dampak/rekomendasi/jam yang terisi
+  [PASS] Keluaran `ss`: 0.0.0.0 dan [::] publik, 127.0.0.1 lokal; nama proses terbaca
+  [PASS] '127.0.0.53%lo:53' (systemd-resolved) adalah loopback -> tidak boleh dilaporkan sebagai port publik
+  [PASS] dpkg-db-backup dan cron bawaan paket tidak dihitung sebagai backup; restic/pg_dump/rclone dihitung
+  [PASS] Keluaran `df`: filesystem virtual (tmpfs) diabaikan, persen dan ukuran terbaca
+== Hasil: 16/16 lulus ==

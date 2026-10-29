@@ -1,0 +1,226 @@
+{
+  "collected_at": "2026-10-29T08:07:42+00:00",
+  "collector": "collect.py/1.0",
+  "system": {
+    "hostname": "web-lab-01",
+    "os": "Ubuntu 24.04.5 LTS",
+    "os_id": "ubuntu",
+    "os_version": "24.04",
+    "kernel": "6.8.0-147-generic",
+    "uptime_days": 0.0,
+    "cpus": 2,
+    "memory_mb": 1967,
+    "virtualization": "kvm",
+    "disks": [
+      {
+        "mount": "/",
+        "used_pct": 28,
+        "size_gb": 8.6
+      },
+      {
+        "mount": "/boot",
+        "used_pct": 8,
+        "size_gb": 0.9
+      },
+      {
+        "mount": "/boot/efi",
+        "used_pct": 6,
+        "size_gb": 0.1
+      }
+    ],
+    "swap_mb": 0,
+    "time_synced": true,
+    "timezone": "Etc/UTC"
+  },
+  "updates": {
+    "pending": 18,
+    "security_pending": 10,
+    "reboot_required": false,
+    "auto_updates": true
+  },
+  "network": {
+    "listening": [
+      {
+        "proto": "udp",
+        "address": "127.0.0.54",
+        "port": 53,
+        "public": false,
+        "process": "systemd-resolve"
+      },
+      {
+        "proto": "udp",
+        "address": "127.0.0.53",
+        "port": 53,
+        "public": false,
+        "process": "systemd-resolve"
+      },
+      {
+        "proto": "udp",
+        "address": "10.0.2.15",
+        "port": 68,
+        "public": true,
+        "process": "systemd-network"
+      },
+      {
+        "proto": "tcp",
+        "address": "127.0.0.1",
+        "port": 3306,
+        "public": false,
+        "process": "mariadbd"
+      },
+      {
+        "proto": "tcp",
+        "address": "127.0.0.54",
+        "port": 53,
+        "public": false,
+        "process": "systemd-resolve"
+      },
+      {
+        "proto": "tcp",
+        "address": "0.0.0.0",
+        "port": 443,
+        "public": true,
+        "process": "nginx"
+      },
+      {
+        "proto": "tcp",
+        "address": "0.0.0.0",
+        "port": 80,
+        "public": true,
+        "process": "nginx"
+      },
+      {
+        "proto": "tcp",
+        "address": "0.0.0.0",
+        "port": 22,
+        "public": true,
+        "process": "sshd"
+      },
+      {
+        "proto": "tcp",
+        "address": "127.0.0.53",
+        "port": 53,
+        "public": false,
+        "process": "systemd-resolve"
+      },
+      {
+        "proto": "tcp",
+        "address": "::",
+        "port": 22,
+        "public": true,
+        "process": "sshd"
+      }
+    ],
+    "firewall": {
+      "ufw_active": true,
+      "firewalld_active": false,
+      "nft_rules": 108
+    },
+    "fail2ban": true
+  },
+  "ssh": {
+    "present": true,
+    "port": "22",
+    "permitrootlogin": "no",
+    "passwordauthentication": "no",
+    "maxauthtries": "3",
+    "x11forwarding": "no"
+  },
+  "accounts": {
+    "login_users": [
+      "root",
+      "sysadmin"
+    ],
+    "sudo_users": [
+      "sysadmin"
+    ],
+    "extra_uid0": [],
+    "empty_password": [],
+    "keys": {
+      "sysadmin": true
+    }
+  },
+  "services": {
+    "running": [
+      "ModemManager",
+      "auditd",
+      "cron",
+      "dbus",
+      "fail2ban",
+      "getty@tty1",
+      "mariadb",
+      "multipathd",
+      "nginx",
+      "packagekit",
+      "php8.3-fpm",
+      "polkit",
+      "rsyslog",
+      "serial-getty@ttyS0",
+      "ssh",
+      "systemd-journald",
+      "systemd-logind",
+      "systemd-networkd",
+      "systemd-resolved",
+      "systemd-timesyncd",
+      "systemd-udevd",
+      "udisks2",
+      "unattended-upgrades",
+      "user@1000"
+    ],
+    "failed": []
+  },
+  "web": {
+    "nginx": true,
+    "apache": false,
+    "waf": true,
+    "autoindex_on": false,
+    "roots": [
+      "/var/www/html"
+    ],
+    "ssl_protocols": [
+      "TLSv1",
+      "TLSv1.1",
+      "TLSv1.2",
+      "TLSv1.3"
+    ],
+    "server_version_exposed": false,
+    "security_headers": [
+      "Strict-Transport-Security",
+      "X-Content-Type-Options",
+      "X-Frame-Options",
+      "Content-Security-Policy",
+      "Referrer-Policy"
+    ],
+    "legacy_tls": [],
+    "http_redirect": true,
+    "sensitive_files": [
+      "/var/www/html/.git",
+      "/var/www/html/backup.sql",
+      "/var/www/html/.env"
+    ],
+    "sensitive_downloadable": [],
+    "certs": [
+      {
+        "path": "/etc/ssl/lab/web.crt",
+        "days_left": 364,
+        "self_signed": true
+      }
+    ]
+  },
+  "database": {
+    "postgresql": false,
+    "mysql": true
+  },
+  "backup": {
+    "scheduled_jobs": [],
+    "newest_backup_age_days": 0.0
+  },
+  "containers": {
+    "docker": false
+  },
+  "monitoring": {
+    "agents": [],
+    "journal_persistent": true,
+    "logrotate": true
+  }
+}
